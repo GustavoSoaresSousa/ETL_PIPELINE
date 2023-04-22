@@ -6,6 +6,7 @@ def test_collect_essencial_information():
   
   html_collector = HtmlCollector()
   essencial_information = html_collector.collect_essential_information(http_request_response['html'])
+  print(essencial_information)
 
   assert isinstance(essencial_information, list)
   assert isinstance(essencial_information[0], dict)

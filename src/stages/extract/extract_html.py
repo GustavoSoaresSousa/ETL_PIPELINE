@@ -10,7 +10,7 @@ class ExtractHtml:
     self.__http_request = http_request
     self.__html_collector = html_collector
     
-  def extract(self) -> ExtractContract:
+  def extract(self):
     try:
       html_information = self.__http_request.request_from_page()
       essential_information = self.__html_collector.collect_essential_information(html_information['html'])
